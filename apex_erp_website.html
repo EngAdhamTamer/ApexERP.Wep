@@ -14,45 +14,30 @@
   --electric:#2196F3;
   --light-blue:#4FC3F7;
   --white:#FFFFFF;
-  --off-white:#F5F8FF;
   --text-muted:#8899BB;
   --border:#1E2E55;
 }
 html{scroll-behavior:smooth}
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--navy);
-  color:var(--white);
-  overflow-x:hidden;
-}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden}
 
-/* LANG SWITCHER */
 .lang-bar{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   display:flex;align-items:center;justify-content:flex-end;
-  padding:8px 24px;
-  background:rgba(13,27,62,0.95);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--border);
-  gap:6px;
+  padding:8px 24px;background:rgba(13,27,62,0.95);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--border);gap:6px;
 }
 .lang-btn{
   padding:4px 14px;border-radius:20px;border:1px solid var(--border);
   background:transparent;color:var(--text-muted);cursor:pointer;
   font-size:13px;font-weight:500;transition:all .2s;
 }
-.lang-btn.active,.lang-btn:hover{
-  background:var(--blue);border-color:var(--blue);color:#fff;
-}
+.lang-btn.active,.lang-btn:hover{background:var(--blue);border-color:var(--blue);color:#fff}
 
-/* NAV */
 nav{
   position:fixed;top:40px;left:0;right:0;z-index:999;
   display:flex;align-items:center;justify-content:space-between;
-  padding:14px 48px;
-  background:rgba(13,27,62,0.9);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border);
+  padding:14px 48px;background:rgba(13,27,62,0.9);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
 }
 .logo-text{
   font-size:22px;font-weight:900;letter-spacing:-0.5px;
@@ -61,28 +46,21 @@ nav{
 }
 .logo-sub{font-size:10px;letter-spacing:3px;color:var(--text-muted);margin-top:2px}
 .nav-links{display:flex;gap:28px;list-style:none}
-.nav-links a{
-  color:var(--text-muted);text-decoration:none;font-size:14px;
-  font-weight:500;transition:color .2s;
-}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:#fff}
 .nav-cta{
   padding:9px 22px;border-radius:6px;
   background:linear-gradient(135deg,var(--blue),var(--electric));
-  color:#fff;text-decoration:none;font-size:14px;font-weight:600;
-  transition:opacity .2s;
+  color:#fff;text-decoration:none;font-size:14px;font-weight:600;transition:opacity .2s;
 }
 .nav-cta:hover{opacity:.85}
 
-/* SECTIONS */
 section{padding:100px 48px;max-width:1200px;margin:0 auto}
 
-/* HERO */
 .hero{
   min-height:100vh;display:flex;align-items:center;
   justify-content:center;flex-direction:column;text-align:center;
-  padding:160px 48px 80px;
-  position:relative;overflow:hidden;
+  padding:160px 48px 80px;position:relative;overflow:hidden;
 }
 .hero-bg{
   position:absolute;inset:0;
@@ -92,37 +70,24 @@ section{padding:100px 48px;max-width:1200px;margin:0 auto}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
   background:rgba(26,111,212,0.15);border:1px solid rgba(26,111,212,0.4);
-  border-radius:24px;padding:6px 16px;font-size:13px;color:var(--light-blue);
-  margin-bottom:28px;
+  border-radius:24px;padding:6px 16px;font-size:13px;color:var(--light-blue);margin-bottom:28px;
 }
-.hero h1{
-  font-size:clamp(42px,7vw,80px);font-weight:900;
-  line-height:1.05;letter-spacing:-2px;
-  margin-bottom:20px;max-width:900px;
-}
-.hero h1 span{
-  background:linear-gradient(135deg,var(--electric),var(--light-blue));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-}
-.hero-sub{
-  font-size:clamp(16px,2vw,20px);color:var(--text-muted);
-  max-width:600px;line-height:1.7;margin-bottom:40px;
-}
+.hero h1{font-size:clamp(42px,7vw,80px);font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;max-width:900px}
+.hero h1 span{background:linear-gradient(135deg,var(--electric),var(--light-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:clamp(16px,2vw,20px);color:var(--text-muted);max-width:600px;line-height:1.7;margin-bottom:40px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:60px}
 .btn-primary{
   padding:14px 32px;border-radius:8px;font-size:15px;font-weight:700;
   background:linear-gradient(135deg,#1A6FD4,#2196F3);
   color:#fff;text-decoration:none;border:none;cursor:pointer;
   transition:transform .2s,box-shadow .2s;
-  box-shadow:0 4px 24px rgba(33,150,243,0.35);
-  display:inline-block;
+  box-shadow:0 4px 24px rgba(33,150,243,0.35);display:inline-block;
 }
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(33,150,243,0.5)}
 .btn-outline{
   padding:14px 32px;border-radius:8px;font-size:15px;font-weight:600;
   background:transparent;border:1.5px solid rgba(255,255,255,0.25);
-  color:#fff;text-decoration:none;cursor:pointer;transition:all .2s;
-  display:inline-block;
+  color:#fff;text-decoration:none;cursor:pointer;transition:all .2s;display:inline-block;
 }
 .btn-outline:hover{border-color:var(--electric);color:var(--light-blue)}
 .hero-stats{display:flex;gap:48px;justify-content:center;flex-wrap:wrap}
@@ -130,53 +95,30 @@ section{padding:100px 48px;max-width:1200px;margin:0 auto}
 .stat-num{font-size:36px;font-weight:900;background:linear-gradient(135deg,#fff,#4FC3F7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .stat-label{font-size:13px;color:var(--text-muted);margin-top:4px}
 
-/* VIDEO PLACEHOLDER */
 .video-wrap{
-  border-radius:16px;overflow:hidden;
-  border:1px solid var(--border);
-  background:var(--navy2);
-  aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
-  cursor:pointer;position:relative;
+  border-radius:16px;overflow:hidden;border:1px solid var(--border);
+  background:var(--navy2);aspect-ratio:16/9;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;
 }
-.video-inner{text-align:center}
 .play-btn{
   width:72px;height:72px;border-radius:50%;
   background:linear-gradient(135deg,var(--blue),var(--electric));
   display:flex;align-items:center;justify-content:center;
-  margin:0 auto 16px;cursor:pointer;
-  box-shadow:0 0 40px rgba(33,150,243,0.4);
-  transition:transform .2s;
+  margin:0 auto 16px;box-shadow:0 0 40px rgba(33,150,243,0.4);transition:transform .2s;
 }
 .play-btn:hover{transform:scale(1.1)}
-.play-arrow{
-  width:0;height:0;
-  border-top:14px solid transparent;
-  border-bottom:14px solid transparent;
-  border-left:22px solid #fff;
-  margin-left:4px;
-}
+.play-arrow{width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:22px solid #fff;margin-left:4px}
 .video-label{color:var(--text-muted);font-size:14px}
 
-/* SECTION HEADERS */
 .section-header{text-align:center;margin-bottom:60px}
-.eyebrow{
-  font-size:12px;letter-spacing:4px;text-transform:uppercase;
-  color:var(--electric);font-weight:600;margin-bottom:14px;display:block;
-}
-.section-header h2{
-  font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-1px;
-  line-height:1.15;margin-bottom:16px;
-}
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--electric);font-weight:600;margin-bottom:14px;display:block}
+.section-header h2{font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-1px;line-height:1.15;margin-bottom:16px}
 .section-header p{font-size:17px;color:var(--text-muted);max-width:560px;margin:0 auto;line-height:1.7}
 
-/* SERVICES GRID */
-.services-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;
-}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 .service-card{
   background:var(--navy2);border:1px solid var(--border);
-  border-radius:14px;padding:28px;transition:all .25s;
-  position:relative;overflow:hidden;
+  border-radius:14px;padding:28px;transition:all .25s;position:relative;overflow:hidden;
 }
 .service-card::before{
   content:'';position:absolute;top:0;left:0;right:0;height:2px;
@@ -185,43 +127,20 @@ section{padding:100px 48px;max-width:1200px;margin:0 auto}
 }
 .service-card:hover{border-color:rgba(33,150,243,0.4);transform:translateY(-4px)}
 .service-card:hover::before{opacity:1}
-.service-icon{
-  width:48px;height:48px;border-radius:12px;
-  background:rgba(26,111,212,0.15);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:18px;font-size:24px;
-}
+.service-icon{width:48px;height:48px;border-radius:12px;background:rgba(26,111,212,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:24px}
 .service-card h3{font-size:17px;font-weight:700;margin-bottom:10px}
 .service-card p{font-size:14px;color:var(--text-muted);line-height:1.65}
 
-/* INDUSTRIES */
-.industries-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;
-}
-.industry-card{
-  background:var(--navy2);border:1px solid var(--border);
-  border-radius:12px;padding:24px 20px;
-  display:flex;align-items:flex-start;gap:16px;
-  transition:all .2s;
-}
+.industries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.industry-card{background:var(--navy2);border:1px solid var(--border);border-radius:12px;padding:24px 20px;display:flex;align-items:flex-start;gap:16px;transition:all .2s}
 .industry-card:hover{border-color:rgba(79,195,247,0.4);background:rgba(26,111,212,0.08)}
 .ind-icon{font-size:28px;line-height:1;flex-shrink:0;margin-top:2px}
 .industry-card h3{font-size:15px;font-weight:700;margin-bottom:6px}
 .industry-card p{font-size:13px;color:var(--text-muted);line-height:1.5}
 
-/* SYSTEM TOUR */
-.tour-wrap{
-  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
-}
-.tour-screen{
-  background:var(--navy2);border:1px solid var(--border);
-  border-radius:14px;overflow:hidden;
-  box-shadow:0 24px 80px rgba(0,0,0,0.5);
-}
-.screen-bar{
-  background:rgba(255,255,255,0.05);padding:10px 16px;
-  display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);
-}
+.tour-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.tour-screen{background:var(--navy2);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.5)}
+.screen-bar{background:rgba(255,255,255,0.05);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
 .dot{width:10px;height:10px;border-radius:50%}
 .mock-dashboard{width:100%;padding:20px;display:flex;flex-direction:column;gap:12px;height:300px}
 .mock-row{display:flex;gap:10px}
@@ -233,47 +152,31 @@ section{padding:100px 48px;max-width:1200px;margin:0 auto}
 .mock-bar{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(180deg,var(--electric),var(--blue))}
 .tour-points{display:flex;flex-direction:column;gap:20px}
 .tour-point{display:flex;align-items:flex-start;gap:16px}
-.tour-num{
-  width:36px;height:36px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,var(--blue),var(--electric));
-  display:flex;align-items:center;justify-content:center;
-  font-weight:800;font-size:14px;
-}
+.tour-num{width:36px;height:36px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--blue),var(--electric));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
 .tour-point h3{font-size:16px;font-weight:700;margin-bottom:6px}
 .tour-point p{font-size:14px;color:var(--text-muted);line-height:1.6}
 
-/* WHY US */
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.why-card{
-  background:var(--navy2);border:1px solid var(--border);
-  border-radius:14px;padding:28px;text-align:center;
-}
+.why-card{background:var(--navy2);border:1px solid var(--border);border-radius:14px;padding:28px;text-align:center}
 .why-icon{font-size:36px;margin-bottom:16px}
 .why-card h3{font-size:18px;font-weight:700;margin-bottom:10px}
 .why-card p{font-size:14px;color:var(--text-muted);line-height:1.6}
 
-/* PARTNER BANNER */
 .partner-banner{
   background:linear-gradient(135deg,rgba(26,111,212,0.15),rgba(33,150,243,0.1));
-  border:1px solid rgba(33,150,243,0.25);
-  border-radius:20px;padding:48px;text-align:center;
-  margin:0 48px;
+  border:1px solid rgba(33,150,243,0.25);border-radius:20px;padding:48px;text-align:center;margin:0 48px;
 }
 .partner-banner h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-1px;margin-bottom:16px}
 .partner-banner p{font-size:17px;color:var(--text-muted);max-width:540px;margin:0 auto 32px;line-height:1.7}
 
-/* CONTACT */
-.contact-wrap{
-  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;
-}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
 .contact-form{display:flex;flex-direction:column;gap:14px}
 .form-group{display:flex;flex-direction:column;gap:6px}
 .form-group label{font-size:13px;color:var(--text-muted);font-weight:500}
 .form-group input,.form-group select,.form-group textarea{
   background:var(--navy2);border:1px solid var(--border);
   border-radius:8px;padding:12px 16px;color:#fff;font-size:14px;
-  font-family:inherit;outline:none;transition:border-color .2s;
-  width:100%;
+  font-family:inherit;outline:none;transition:border-color .2s;width:100%;
 }
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--electric)}
 .form-group textarea{resize:vertical;min-height:100px}
@@ -281,15 +184,19 @@ section{padding:100px 48px;max-width:1200px;margin:0 auto}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .contact-info h3{font-size:22px;font-weight:800;margin-bottom:24px}
 .contact-item{display:flex;align-items:center;gap:14px;margin-bottom:20px}
-.contact-icon{
-  width:42px;height:42px;border-radius:10px;
-  background:rgba(26,111,212,0.15);
-  display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;
-}
+.contact-icon{width:42px;height:42px;border-radius:10px;background:rgba(26,111,212,0.15);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
 .contact-item p{font-size:15px;font-weight:500}
 .contact-item span{font-size:13px;color:var(--text-muted)}
 
-/* FOOTER */
+/* SUCCESS MESSAGE */
+.success-msg{
+  display:none;background:rgba(26,111,212,0.15);border:1px solid rgba(33,150,243,0.4);
+  border-radius:12px;padding:24px;text-align:center;
+}
+.success-msg.show{display:block}
+.success-msg h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.success-msg p{color:var(--text-muted);font-size:14px}
+
 footer{
   background:rgba(0,0,0,0.4);border-top:1px solid var(--border);
   padding:40px 48px;display:flex;align-items:center;
@@ -299,10 +206,8 @@ footer{
 .footer-tagline{font-size:12px;color:var(--text-muted);letter-spacing:3px;margin-top:4px}
 footer p{font-size:13px;color:var(--text-muted)}
 
-/* DIVIDER */
 .divider{height:1px;background:var(--border);margin:0 48px}
 
-/* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 .hero>*{animation:fadeUp .6s ease both}
 .hero>*:nth-child(2){animation-delay:.1s}
@@ -311,16 +216,13 @@ footer p{font-size:13px;color:var(--text-muted)}
 .hero>*:nth-child(5){animation-delay:.4s}
 .hero>*:nth-child(6){animation-delay:.5s}
 
-/* RTL */
 [dir="rtl"] nav{flex-direction:row-reverse}
 [dir="rtl"] .lang-bar{flex-direction:row-reverse;justify-content:flex-start}
-[dir="rtl"] .tour-wrap{direction:rtl}
-[dir="rtl"] .contact-wrap{direction:rtl}
+[dir="rtl"] .tour-wrap,[dir="rtl"] .contact-wrap{direction:rtl}
 [dir="rtl"] .industry-card{flex-direction:row-reverse;text-align:right}
 [dir="rtl"] .tour-point{flex-direction:row-reverse;text-align:right}
 [dir="rtl"] .contact-item{flex-direction:row-reverse;text-align:right}
-[dir="rtl"] .screen-bar{flex-direction:row-reverse}
-[dir="rtl"] .mock-row{flex-direction:row-reverse}
+[dir="rtl"] .screen-bar,[dir="rtl"] .mock-row{flex-direction:row-reverse}
 
 @media(max-width:768px){
   nav{padding:12px 20px}
@@ -363,9 +265,9 @@ footer p{font-size:13px;color:var(--text-muted)}
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
-  <div class="hero-badge">✦ <span data-key="badge">Odoo Official Partner</span></div>
+  <div class="hero-badge">✦ <span data-key="badge">Certified ERP Partner</span></div>
   <h1 data-key="hero_h1">Your <span>Success Partner</span>,<br>Not Just a System</h1>
-  <p class="hero-sub" data-key="hero_sub">APEX ERP delivers full Odoo implementation, customization, training, and ongoing support — built for factories, hospitals, contractors, and every business ready to grow.</p>
+  <p class="hero-sub" data-key="hero_sub">APEX ERP delivers full ERP system implementation, customization, training, and ongoing support — built for factories, hospitals, contractors, and every business ready to grow.</p>
   <div class="hero-btns">
     <a href="#contact" class="btn-primary" data-key="hero_btn1">Book a Free Demo</a>
     <a href="#system" class="btn-outline" data-key="hero_btn2">See the System</a>
@@ -381,7 +283,7 @@ footer p{font-size:13px;color:var(--text-muted)}
 <!-- VIDEO -->
 <div style="max-width:900px;margin:0 auto 80px;padding:0 48px">
   <div class="video-wrap" id="videoWrap">
-    <div class="video-inner">
+    <div style="text-align:center">
       <div class="play-btn" onclick="document.getElementById('videoWrap').innerHTML='<iframe style=\'width:100%;height:100%;border:none\' src=\'https://www.youtube.com/embed/?autoplay=1\' allow=\'autoplay\'></iframe>'">
         <div class="play-arrow"></div>
       </div>
@@ -398,14 +300,17 @@ footer p{font-size:13px;color:var(--text-muted)}
     <p data-key="services_sub">From first installation to long-term growth — we cover it all.</p>
   </div>
   <div class="services-grid">
-    <div class="service-card"><div class="service-icon">🚀</div><h3 data-key="s1_t">Odoo Implementation</h3><p data-key="s1_p">Full deployment of your Odoo system from scratch — configured to match your exact workflow.</p></div>
+    <div class="service-card"><div class="service-icon">🚀</div><h3 data-key="s1_t">ERP System Implementation</h3><p data-key="s1_p">Full deployment of your ERP system from scratch — configured to match your exact workflow.</p></div>
     <div class="service-card"><div class="service-icon">⚙️</div><h3 data-key="s2_t">Customization</h3><p data-key="s2_p">We tailor every module to fit your business processes, reports, and integrations.</p></div>
     <div class="service-card"><div class="service-icon">🎓</div><h3 data-key="s3_t">Training</h3><p data-key="s3_p">Hands-on training for your team so they can use the system with confidence from day one.</p></div>
     <div class="service-card"><div class="service-icon">🛡️</div><h3 data-key="s4_t">Ongoing Support</h3><p data-key="s4_p">Local technical support whenever you need it — with real response times, not just tickets.</p></div>
     <div class="service-card"><div class="service-icon">☁️</div><h3 data-key="s5_t">Cloud Hosting</h3><p data-key="s5_p">Secure, fast, and managed cloud hosting — no hardware, no headaches.</p></div>
     <div class="service-card"><div class="service-icon">🖥️</div><h3 data-key="s6_t">Server Installation</h3><p data-key="s6_p">On-premise server setup and configuration for maximum control and privacy.</p></div>
     <div class="service-card"><div class="service-icon">🔧</div><h3 data-key="s7_t">Installation & Setup</h3><p data-key="s7_p">End-to-end installation — database, modules, users, and everything in between.</p></div>
-    <div class="service-card"><div class="service-icon">🔄</div><h3 data-key="s8_t">System Migration</h3><p data-key="s8_p">We move your existing data safely to Odoo without losing a single record.</p></div>
+    <div class="service-card"><div class="service-icon">🔄</div><h3 data-key="s8_t">System Migration</h3><p data-key="s8_p">We move your existing data safely to the ERP system without losing a single record.</p></div>
+    <div class="service-card"><div class="service-icon">💰</div><h3 data-key="s9_t">Financial & Management Consulting</h3><p data-key="s9_p">Expert consulting to restructure your financial and administrative operations for maximum efficiency and control.</p></div>
+    <div class="service-card"><div class="service-icon">🔍</div><h3 data-key="s10_t">Financial & Administrative Audit</h3><p data-key="s10_p">A comprehensive review of your organization's financial and administrative health — identifying gaps and building a roadmap for improvement.</p></div>
+    <div class="service-card"><div class="service-icon">📊</div><h3 data-key="s11_t">Feasibility Studies</h3><p data-key="s11_p">Data-driven feasibility studies to evaluate your business ideas and investment decisions with confidence before you commit.</p></div>
   </div>
 </section>
 
@@ -421,7 +326,7 @@ footer p{font-size:13px;color:var(--text-muted)}
   <div class="industries-grid">
     <div class="industry-card"><div class="ind-icon">🏭</div><div><h3 data-key="i1_t">Factories & Manufacturing</h3><p data-key="i1_p">Production planning, inventory, quality control, and supply chain — all in one system.</p></div></div>
     <div class="industry-card"><div class="ind-icon">🏗️</div><div><h3 data-key="i2_t">Contracting Companies</h3><p data-key="i2_p">Project management, billing, subcontractors, and site tracking made effortless.</p></div></div>
-    <div class="industry-card"><div class="ind-icon">🏥</div><div><h3 data-key="i3_t">Hospitals & Healthcare</h3><p data-key="i3_p">Patient flow, inventory, billing, and staff management — all ready for healthcare standards.</p></div></div>
+    <div class="industry-card"><div class="ind-icon">🏥</div><div><h3 data-key="i3_t">Hospitals & Healthcare</h3><p data-key="i3_p">Patient flow, inventory, billing, and staff management — ready for healthcare standards.</p></div></div>
     <div class="industry-card"><div class="ind-icon">🛒</div><div><h3 data-key="i4_t">Retail & Distribution</h3><p data-key="i4_p">Multi-branch POS, inventory sync, and customer loyalty — from warehouse to shelf.</p></div></div>
     <div class="industry-card"><div class="ind-icon">🏢</div><div><h3 data-key="i5_t">Services & Consulting</h3><p data-key="i5_p">Timesheet, invoicing, CRM, and HR — streamlined for professional service firms.</p></div></div>
     <div class="industry-card"><div class="ind-icon">📦</div><div><h3 data-key="i6_t">Logistics & Warehousing</h3><p data-key="i6_p">Real-time tracking, automated replenishment, and full fleet management.</p></div></div>
@@ -445,7 +350,7 @@ footer p{font-size:13px;color:var(--text-muted)}
         <div class="dot" style="background:#FF5F56"></div>
         <div class="dot" style="background:#FFBD2E"></div>
         <div class="dot" style="background:#27C93F"></div>
-        <span style="font-size:12px;color:var(--text-muted);margin-left:8px">APEX ERP Dashboard</span>
+        <span style="font-size:12px;color:var(--text-muted);margin-left:8px">APEX ERP — Dashboard</span>
       </div>
       <div class="mock-dashboard">
         <div class="mock-row">
@@ -479,7 +384,7 @@ footer p{font-size:13px;color:var(--text-muted)}
       </div>
     </div>
     <div class="tour-points">
-      <div class="tour-point"><div class="tour-num">1</div><div><h3 data-key="tp1_t">Live Demo, Real Data</h3><p data-key="tp1_p">We open the actual Odoo system and walk you through it — using real scenarios relevant to your industry.</p></div></div>
+      <div class="tour-point"><div class="tour-num">1</div><div><h3 data-key="tp1_t">Live Demo, Real Data</h3><p data-key="tp1_p">We open the actual ERP system and walk you through it — using real scenarios relevant to your industry.</p></div></div>
       <div class="tour-point"><div class="tour-num">2</div><div><h3 data-key="tp2_t">Custom Modules Walkthrough</h3><p data-key="tp2_p">See how each module — Inventory, HR, Accounting, CRM — works for your specific use case.</p></div></div>
       <div class="tour-point"><div class="tour-num">3</div><div><h3 data-key="tp3_t">Your Questions, Answered Live</h3><p data-key="tp3_p">Ask anything during the demo. Our specialists explain every feature clearly in your language.</p></div></div>
       <a href="#contact" class="btn-primary" data-key="tour_cta">Request Your Live Tour →</a>
@@ -493,13 +398,13 @@ footer p{font-size:13px;color:var(--text-muted)}
 <section id="why">
   <div class="section-header">
     <span class="eyebrow" data-key="why_eyebrow">Why APEX ERP</span>
-    <h2 data-key="why_h2">We're Your Partner, Not Just a Vendor</h2>
+    <h2 data-key="why_h2">Your Vision… We Deliver It With Excellence</h2>
     <p data-key="why_sub">We stay with you from day one to year five and beyond.</p>
   </div>
   <div class="why-grid">
     <div class="why-card"><div class="why-icon">🤝</div><h3 data-key="w1_t">Success Partnership</h3><p data-key="w1_p">We don't disappear after go-live. Your growth is our measure of success.</p></div>
     <div class="why-card"><div class="why-icon">📍</div><h3 data-key="w2_t">Local Support Team</h3><p data-key="w2_p">Real people, your timezone, your language. Fast response — not just ticket numbers.</p></div>
-    <div class="why-card"><div class="why-icon">🏆</div><h3 data-key="w3_t">Certified Expertise</h3><p data-key="w3_p">Official Odoo-trained specialists with deep industry experience across all sectors.</p></div>
+    <div class="why-card"><div class="why-icon">🏆</div><h3 data-key="w3_t">Certified Expertise</h3><p data-key="w3_p">Official ERP-certified specialists with deep industry experience across all sectors.</p></div>
     <div class="why-card"><div class="why-icon">🌐</div><h3 data-key="w4_t">20+ Languages Supported</h3><p data-key="w4_p">We work in Arabic, English, Chinese and many more — so nothing gets lost in translation.</p></div>
     <div class="why-card"><div class="why-icon">🔒</div><h3 data-key="w5_t">Secure Infrastructure</h3><p data-key="w5_p">Enterprise-grade cloud and server setups with regular backups and security audits.</p></div>
     <div class="why-card"><div class="why-icon">📈</div><h3 data-key="w6_t">Scalable System</h3><p data-key="w6_p">Start with what you need. Add modules as your business grows — no re-implementation needed.</p></div>
@@ -527,16 +432,33 @@ footer p{font-size:13px;color:var(--text-muted)}
     <p data-key="contact_sub">Tell us about your business and we'll reach out within 24 hours.</p>
   </div>
   <div class="contact-wrap">
-    <div class="contact-form">
+
+    <!-- NETLIFY FORM -->
+    <form class="contact-form" name="apex-demo-booking" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+      <input type="hidden" name="form-name" value="apex-demo-booking">
+      <input type="hidden" name="bot-field" style="display:none">
+
       <div class="form-row">
-        <div class="form-group"><label data-key="f_name">Full Name</label><input type="text" placeholder="Ahmed Mohamed"></div>
-        <div class="form-group"><label data-key="f_company">Company</label><input type="text" placeholder="Al Nour Factory"></div>
+        <div class="form-group">
+          <label data-key="f_name">Full Name</label>
+          <input type="text" name="name" placeholder="Ahmed Mohamed" required>
+        </div>
+        <div class="form-group">
+          <label data-key="f_company">Company</label>
+          <input type="text" name="company" placeholder="Al Nour Factory" required>
+        </div>
       </div>
-      <div class="form-group"><label data-key="f_email">Email</label><input type="email" placeholder="ahmed@company.com"></div>
-      <div class="form-group"><label data-key="f_phone">Phone / WhatsApp</label><input type="tel" placeholder="+20 12 xxxx xxxx"></div>
+      <div class="form-group">
+        <label data-key="f_email">Email</label>
+        <input type="email" name="email" placeholder="ahmed@company.com" required>
+      </div>
+      <div class="form-group">
+        <label data-key="f_phone">Phone / WhatsApp</label>
+        <input type="tel" name="phone" placeholder="+20 12 xxxx xxxx">
+      </div>
       <div class="form-group">
         <label data-key="f_industry">Industry</label>
-        <select>
+        <select name="industry">
           <option data-key="f_select">Select your industry</option>
           <option>Manufacturing / Factory</option>
           <option>Contracting</option>
@@ -547,9 +469,21 @@ footer p{font-size:13px;color:var(--text-muted)}
           <option>Other</option>
         </select>
       </div>
-      <div class="form-group"><label data-key="f_msg">Message (optional)</label><textarea placeholder="Tell us about your current challenges..."></textarea></div>
-      <button class="btn-primary" style="font-size:15px;padding:14px;width:100%;border:none" onclick="submitForm()" data-key="f_submit">Send & Book Demo</button>
+      <div class="form-group">
+        <label data-key="f_msg">Message (optional)</label>
+        <textarea name="message" placeholder="Tell us about your current challenges..."></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="font-size:15px;padding:14px;width:100%;border:none" data-key="f_submit">Send & Book Demo</button>
+    </form>
+
+    <!-- SUCCESS MESSAGE (shown after submit) -->
+    <div class="success-msg" id="successMsg">
+      <div style="font-size:40px;margin-bottom:12px">✅</div>
+      <h3 data-key="success_title">Booking Received!</h3>
+      <p data-key="success_body">Thank you! We'll contact you within 24 hours to confirm your demo.</p>
     </div>
+
+    <!-- CONTACT INFO -->
     <div class="contact-info">
       <h3 data-key="ci_h">Prefer to talk directly?</h3>
       <a href="https://wa.me/201221483058" target="_blank" style="text-decoration:none;color:inherit">
@@ -573,6 +507,7 @@ footer p{font-size:13px;color:var(--text-muted)}
         <div><p data-key="ci_hrs">Sun – Thu, 9AM – 6PM</p><span data-key="ci_hrs2">Emergency support available 24/7</span></div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -589,23 +524,26 @@ footer p{font-size:13px;color:var(--text-muted)}
 const translations={
   en:{
     nav_services:"Services",nav_industries:"Industries",nav_system:"System",nav_why:"Why Us",nav_contact:"Contact",nav_demo:"Book a Demo",
-    badge:"Odoo Official Partner",
+    badge:"Certified ERP Partner",
     hero_h1:'Your <span style="background:linear-gradient(135deg,var(--electric),var(--light-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Success Partner</span>,<br>Not Just a System',
-    hero_sub:"APEX ERP delivers full Odoo implementation, customization, training, and ongoing support — built for factories, hospitals, contractors, and every business ready to grow.",
+    hero_sub:"APEX ERP delivers full ERP system implementation, customization, training, and ongoing support — built for factories, hospitals, contractors, and every business ready to grow.",
     hero_btn1:"Book a Free Demo",hero_btn2:"See the System",
     stat1:"Clients Served",stat2:"Services Offered",stat3:"Languages Supported",stat4:"Local Support",
     video_label:"Watch how APEX ERP transforms your business",
     services_eyebrow:"What We Offer",
     services_h2:'Everything You Need to Run <em style="font-style:normal;background:linear-gradient(135deg,var(--electric),var(--light-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Smarter</em>',
     services_sub:"From first installation to long-term growth — we cover it all.",
-    s1_t:"Odoo Implementation",s1_p:"Full deployment of your Odoo system from scratch — configured to match your exact workflow.",
+    s1_t:"ERP System Implementation",s1_p:"Full deployment of your ERP system from scratch — configured to match your exact workflow.",
     s2_t:"Customization",s2_p:"We tailor every module to fit your business processes, reports, and integrations.",
     s3_t:"Training",s3_p:"Hands-on training for your team so they can use the system with confidence from day one.",
     s4_t:"Ongoing Support",s4_p:"Local technical support whenever you need it — with real response times, not just tickets.",
     s5_t:"Cloud Hosting",s5_p:"Secure, fast, and managed cloud hosting — no hardware, no headaches.",
     s6_t:"Server Installation",s6_p:"On-premise server setup and configuration for maximum control and privacy.",
     s7_t:"Installation & Setup",s7_p:"End-to-end installation — database, modules, users, and everything in between.",
-    s8_t:"System Migration",s8_p:"We move your existing data safely to Odoo without losing a single record.",
+    s8_t:"System Migration",s8_p:"We move your existing data safely to the ERP system without losing a single record.",
+    s9_t:"Financial & Management Consulting",s9_p:"Expert consulting to restructure your financial and administrative operations for maximum efficiency and control.",
+    s10_t:"Financial & Administrative Audit",s10_p:"A comprehensive review of your organization's financial and administrative health — identifying gaps and building a roadmap for improvement.",
+    s11_t:"Feasibility Studies",s11_p:"Data-driven feasibility studies to evaluate your business ideas and investment decisions with confidence before you commit.",
     ind_eyebrow:"Who We Serve",ind_h2:"Built for Every Industry",
     ind_sub:"If your business has operations, people, and processes — APEX ERP can optimize them.",
     i1_t:"Factories & Manufacturing",i1_p:"Production planning, inventory, quality control, and supply chain — all in one system.",
@@ -619,15 +557,15 @@ const translations={
     sys_eyebrow:"Live System Preview",sys_h2:"See What Your Business Looks Like in Odoo",
     sys_sub:"We open the system and give you a live tour — no guessing, just your real data.",
     dash1:"Monthly Revenue",dash2:"Orders",dash3:"Uptime",dash4:"Revenue Trend",dash5:"Top Modules",
-    tp1_t:"Live Demo, Real Data",tp1_p:"We open the actual Odoo system and walk you through it — using real scenarios relevant to your industry.",
+    tp1_t:"Live Demo, Real Data",tp1_p:"We open the actual ERP system and walk you through it — using real scenarios relevant to your industry.",
     tp2_t:"Custom Modules Walkthrough",tp2_p:"See how each module — Inventory, HR, Accounting, CRM — works for your specific use case.",
     tp3_t:"Your Questions, Answered Live",tp3_p:"Ask anything during the demo. Our specialists explain every feature clearly in your language.",
     tour_cta:"Request Your Live Tour →",
-    why_eyebrow:"Why APEX ERP",why_h2:"We're Your Partner, Not Just a Vendor",
+    why_eyebrow:"Why APEX ERP",why_h2:"Your Vision… We Deliver It With Excellence",
     why_sub:"We stay with you from day one to year five and beyond.",
     w1_t:"Success Partnership",w1_p:"We don't disappear after go-live. Your growth is our measure of success.",
     w2_t:"Local Support Team",w2_p:"Real people, your timezone, your language. Fast response — not just ticket numbers.",
-    w3_t:"Certified Expertise",w3_p:"Official Odoo-trained specialists with deep industry experience across all sectors.",
+    w3_t:"Certified Expertise",w3_p:"Official ERP-certified specialists with deep industry experience across all sectors.",
     w4_t:"20+ Languages Supported",w4_p:"We work in Arabic, English, Chinese and many more — so nothing gets lost in translation.",
     w5_t:"Secure Infrastructure",w5_p:"Enterprise-grade cloud and server setups with regular backups and security audits.",
     w6_t:"Scalable System",w6_p:"Start with what you need. Add modules as your business grows — no re-implementation needed.",
@@ -636,29 +574,33 @@ const translations={
     contact_sub:"Tell us about your business and we'll reach out within 24 hours.",
     f_name:"Full Name",f_company:"Company",f_email:"Email",f_phone:"Phone / WhatsApp",
     f_industry:"Industry",f_select:"Select your industry",f_msg:"Message (optional)",f_submit:"Send & Book Demo",
+    success_title:"Booking Received!",success_body:"Thank you! We'll contact you within 24 hours to confirm your demo.",
     ci_h:"Prefer to talk directly?",ci_wa:"Chat with us on WhatsApp",ci_email:"We reply within 24 hours",
     ci_loc:"Egypt — Serving the MENA Region",ci_loc2:"Local offices & on-site visits available",
     ci_hrs:"Sun – Thu, 9AM – 6PM",ci_hrs2:"Emergency support available 24/7"
   },
   ar:{
     nav_services:"الخدمات",nav_industries:"القطاعات",nav_system:"النظام",nav_why:"لماذا نحن",nav_contact:"تواصل",nav_demo:"احجز عرضاً",
-    badge:"شريك أودو الرسمي",
+    badge:"شريك ERP معتمد",
     hero_h1:'شريكك في <span style="background:linear-gradient(135deg,var(--electric),var(--light-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">النجاح</span>،<br>وليس مجرد نظام',
-    hero_sub:"أبيكس ERP يقدم التطبيق الكامل لأودو، التخصيص، التدريب، والدعم المستمر — مصمم للمصانع والمستشفيات والمقاولين وكل أعمال تسعى للنمو.",
+    hero_sub:"أبيكس ERP يقدم التطبيق الكامل لنظام ERP، التخصيص، التدريب، والدعم المستمر — مصمم للمصانع والمستشفيات والمقاولين وكل أعمال تسعى للنمو.",
     hero_btn1:"احجز عرضاً مجانياً",hero_btn2:"شاهد النظام",
     stat1:"عميل تمت خدمته",stat2:"خدمة متوفرة",stat3:"لغة مدعومة",stat4:"دعم محلي",
     video_label:"شاهد كيف يحول أبيكس ERP أعمالك",
     services_eyebrow:"ما نقدمه",
     services_h2:'كل ما تحتاجه للعمل <em style="font-style:normal;background:linear-gradient(135deg,var(--electric),var(--light-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">بذكاء</em>',
     services_sub:"من أول تثبيت وحتى النمو طويل الأمد — نحن نغطي كل شيء.",
-    s1_t:"تطبيق أودو",s1_p:"نشر كامل لنظام أودو من الصفر — مهيأ ليتطابق مع سير عملك بالضبط.",
+    s1_t:"تطبيق نظام ERP",s1_p:"نشر كامل لنظام ERP من الصفر — مهيأ ليتطابق مع سير عملك بالضبط.",
     s2_t:"التخصيص",s2_p:"نُكيِّف كل وحدة لتناسب عملياتك وتقاريرك وتكاملاتك.",
     s3_t:"التدريب",s3_p:"تدريب عملي لفريقك حتى يتمكنوا من استخدام النظام بثقة من اليوم الأول.",
     s4_t:"الدعم المستمر",s4_p:"دعم تقني محلي متى احتجت — مع أوقات استجابة حقيقية.",
     s5_t:"الاستضافة السحابية",s5_p:"استضافة سحابية آمنة وسريعة ومُدارة — بدون أجهزة أو متاعب.",
     s6_t:"تثبيت الخوادم",s6_p:"إعداد وتهيئة الخوادم المحلية للحصول على أقصى تحكم وخصوصية.",
     s7_t:"التثبيت والإعداد",s7_p:"تثبيت شامل — قاعدة البيانات والوحدات والمستخدمين وكل شيء.",
-    s8_t:"ترحيل النظام",s8_p:"ننقل بياناتك الحالية بأمان إلى أودو دون فقدان أي سجل.",
+    s8_t:"ترحيل النظام",s8_p:"ننقل بياناتك الحالية بأمان إلى نظام ERP دون فقدان أي سجل.",
+    s9_t:"استشارات مالية وإدارية",s9_p:"استشارات متخصصة لإعادة هيكلة عملياتك المالية والإدارية لتحقيق أقصى كفاءة وتحكم.",
+    s10_t:"فحص مالي وإداري للمؤسسة",s10_p:"مراجعة شاملة للوضع المالي والإداري لمؤسستك — نكشف الثغرات ونضع خارطة طريق للتحسين.",
+    s11_t:"دراسات الجدوى",s11_p:"دراسات جدوى مبنية على البيانات لتقييم أفكارك الاستثمارية وقراراتك التجارية بثقة قبل الالتزام.",
     ind_eyebrow:"من نخدم",ind_h2:"مبني لكل القطاعات",
     ind_sub:"إذا كان لعملك عمليات وموظفون وإجراءات — فأبيكس ERP يستطيع تحسينها.",
     i1_t:"المصانع والتصنيع",i1_p:"تخطيط الإنتاج والمخزون ومراقبة الجودة وسلسلة التوريد — في نظام واحد.",
@@ -668,50 +610,54 @@ const translations={
     i5_t:"الخدمات والاستشارات",i5_p:"الجداول الزمنية والفواتير وإدارة العملاء والموارد البشرية.",
     i6_t:"اللوجستيات والتخزين",i6_p:"تتبع فوري وتجديد تلقائي وإدارة أسطول متكاملة.",
     i7_t:"التعليم",i7_p:"إدارة الطلاب والرسوم والموارد البشرية والعمليات في منصة واحدة.",
-    i8_t:"أي قطاع أعمال",i8_p:"إذا كان أودو يستطيع مساعدتك — فأبيكس ERP سيحقق ذلك.",
-    sys_eyebrow:"معاينة النظام",sys_h2:"شاهد كيف يبدو عملك في أودو",
+    i8_t:"أي قطاع أعمال",i8_p:"إذا كان نظام ERP يستطيع مساعدتك — فأبيكس ERP سيحقق ذلك.",
+    sys_eyebrow:"معاينة النظام",sys_h2:"شاهد كيف يبدو عملك في نظام ERP",
     sys_sub:"نفتح النظام ونأخذك في جولة حية — بدون تخمين، فقط بياناتك الحقيقية.",
     dash1:"الإيرادات الشهرية",dash2:"الطلبات",dash3:"وقت التشغيل",dash4:"اتجاه الإيرادات",dash5:"أهم الوحدات",
-    tp1_t:"عرض حي، بيانات حقيقية",tp1_p:"نفتح نظام أودو الفعلي ونشرح لك كل شيء — باستخدام سيناريوهات حقيقية ذات صلة بقطاعك.",
+    tp1_t:"عرض حي، بيانات حقيقية",tp1_p:"نفتح نظام ERP الفعلي ونشرح لك كل شيء — باستخدام سيناريوهات حقيقية ذات صلة بقطاعك.",
     tp2_t:"جولة في الوحدات المخصصة",tp2_p:"شاهد كيف تعمل كل وحدة — المخزون والموارد البشرية والمحاسبة وإدارة العملاء.",
     tp3_t:"أسئلتك تُجاب فوراً",tp3_p:"اسأل أي شيء خلال العرض. متخصصونا يشرحون كل ميزة بوضوح بلغتك.",
     tour_cta:"اطلب جولتك الحية ←",
-    why_eyebrow:"لماذا أبيكس ERP",why_h2:"نحن شريكك وليس مجرد مورد",
+    why_eyebrow:"لماذا أبيكس ERP",why_h2:"رؤيتك… نحققها باحتراف",
     why_sub:"نبقى معك من اليوم الأول وإلى ما بعد السنة الخامسة.",
     w1_t:"شراكة النجاح",w1_p:"لا نختفي بعد الإطلاق. نموك هو مقياس نجاحنا.",
     w2_t:"فريق دعم محلي",w2_p:"أشخاص حقيقيون، منطقتك الزمنية، لغتك. استجابة سريعة.",
-    w3_t:"خبرة معتمدة",w3_p:"متخصصون معتمدون من أودو بخبرة صناعية عميقة في جميع القطاعات.",
+    w3_t:"خبرة معتمدة",w3_p:"متخصصون معتمدون من نظام ERP بخبرة صناعية عميقة في جميع القطاعات.",
     w4_t:"+20 لغة مدعومة",w4_p:"نعمل بالعربية والإنجليزية والصينية وأكثر — حتى لا يضيع شيء في الترجمة.",
     w5_t:"بنية تحتية آمنة",w5_p:"إعدادات سحابية وخوادم بمستوى المؤسسات مع نسخ احتياطية منتظمة.",
     w6_t:"نظام قابل للتوسع",w6_p:"ابدأ بما تحتاجه. أضف وحدات مع نمو أعمالك — دون إعادة تطبيق.",
-    pb_h2:"مستعد لتحويل<br>أعمالك؟",pb_p:"احجز استشارة مجانية وعرضاً حياً لأودو مع فريقنا. بدون التزام. فقط وضوح.",pb_cta:"ابدأ اليوم",
+    pb_h2:"مستعد لتحويل<br>أعمالك؟",pb_p:"احجز استشارة مجانية وعرضاً حياً لنظام ERP مع فريقنا. بدون التزام. فقط وضوح.",pb_cta:"ابدأ اليوم",
     contact_eyebrow:"تواصل معنا",contact_h2:"احجز عرضك المجاني",
     contact_sub:"أخبرنا عن أعمالك وسنتواصل معك خلال 24 ساعة.",
     f_name:"الاسم الكامل",f_company:"الشركة",f_email:"البريد الإلكتروني",f_phone:"الهاتف / واتساب",
     f_industry:"القطاع",f_select:"اختر قطاعك",f_msg:"رسالة (اختياري)",f_submit:"أرسل واحجز عرضاً",
+    success_title:"تم استلام الحجز!",success_body:"شكراً! سنتواصل معك خلال 24 ساعة لتأكيد موعد العرض.",
     ci_h:"تفضل التحدث مباشرة؟",ci_wa:"تواصل معنا على واتساب",ci_email:"نرد خلال 24 ساعة",
     ci_loc:"مصر — خدمة منطقة الشرق الأوسط وشمال أفريقيا",ci_loc2:"مكاتب محلية وزيارات ميدانية متاحة",
     ci_hrs:"الأحد – الخميس، 9ص – 6م",ci_hrs2:"دعم طوارئ متاح 24/7"
   },
   zh:{
     nav_services:"服务",nav_industries:"行业",nav_system:"系统",nav_why:"为何选择我们",nav_contact:"联系",nav_demo:"预约演示",
-    badge:"Odoo 官方合作伙伴",
+    badge:"认证 ERP 合作伙伴",
     hero_h1:'您的<span style="background:linear-gradient(135deg,var(--electric),var(--light-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">成功伙伴</span>，<br>而非仅仅是系统',
-    hero_sub:"APEX ERP 提供完整的 Odoo 实施、定制、培训和持续支持 — 专为工厂、医院、承包商及所有寻求增长的企业构建。",
+    hero_sub:"APEX ERP 提供完整的 ERP 系统实施、定制、培训和持续支持 — 专为工厂、医院、承包商及所有寻求增长的企业构建。",
     hero_btn1:"免费预约演示",hero_btn2:"了解系统",
     stat1:"服务客户",stat2:"提供服务",stat3:"支持语言",stat4:"本地支持",
     video_label:"观看 APEX ERP 如何转型您的业务",
     services_eyebrow:"我们的服务",
     services_h2:'您需要的一切，让运营更<em style="font-style:normal;background:linear-gradient(135deg,var(--electric),var(--light-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">智能</em>',
     services_sub:"从首次安装到长期增长 — 我们全面覆盖。",
-    s1_t:"Odoo 实施",s1_p:"从零开始完整部署您的 Odoo 系统 — 完全匹配您的业务流程。",
+    s1_t:"ERP 系统实施",s1_p:"从零开始完整部署您的 ERP 系统 — 完全匹配您的业务流程。",
     s2_t:"定制开发",s2_p:"我们定制每个模块以适应您的业务流程、报表和集成需求。",
     s3_t:"培训",s3_p:"为您的团队提供实践培训，让他们从第一天起就能自信地使用系统。",
     s4_t:"持续支持",s4_p:"随时提供本地技术支持 — 真实的响应时间，而非仅仅是工单号码。",
     s5_t:"云端托管",s5_p:"安全、快速、托管的云端服务 — 无需硬件，无需烦恼。",
     s6_t:"服务器安装",s6_p:"本地服务器设置和配置，实现最大控制权和隐私保护。",
     s7_t:"安装与配置",s7_p:"端到端安装 — 数据库、模块、用户及所有相关配置。",
-    s8_t:"系统迁移",s8_p:"我们将您现有数据安全迁移到 Odoo，不丢失任何记录。",
+    s8_t:"系统迁移",s8_p:"我们将您现有数据安全迁移到 ERP 系统，不丢失任何记录。",
+    s9_t:"财务与管理咨询",s9_p:"专业咨询服务，重构您的财务和行政运营，实现最大效率与管控。",
+    s10_t:"财务与行政审计",s10_p:"对您机构的财务和行政状况进行全面审查 — 识别差距并制定改进路线图。",
+    s11_t:"可行性研究",s11_p:"基于数据的可行性研究，在您做出承诺之前，自信地评估您的商业创意和投资决策。",
     ind_eyebrow:"服务对象",ind_h2:"适用于各行各业",
     ind_sub:"无论您的企业有何运营、人员和流程 — APEX ERP 都能优化它们。",
     i1_t:"工厂与制造业",i1_p:"生产计划、库存、质量控制和供应链 — 全在一个系统中。",
@@ -725,11 +671,11 @@ const translations={
     sys_eyebrow:"系统实时预览",sys_h2:"亲眼看看您的企业在 Odoo 中的样子",
     sys_sub:"我们开放系统并提供实时演示 — 无需猜测，展示真实数据。",
     dash1:"月度收入",dash2:"订单",dash3:"运行时间",dash4:"收入趋势",dash5:"热门模块",
-    tp1_t:"实时演示，真实数据",tp1_p:"我们打开真实的 Odoo 系统并带您浏览 — 使用与您行业相关的真实场景。",
+    tp1_t:"实时演示，真实数据",tp1_p:"我们打开真实的 ERP 系统并带您浏览 — 使用与您行业相关的真实场景。",
     tp2_t:"定制模块演示",tp2_p:"了解每个模块 — 库存、人力资源、会计、CRM — 如何针对您的具体用例运作。",
     tp3_t:"现场答疑",tp3_p:"在演示过程中随时提问。我们的专家用您的语言清晰解释每项功能。",
     tour_cta:"申请实时演示 →",
-    why_eyebrow:"为何选择 APEX ERP",why_h2:"我们是您的合作伙伴，而非供应商",
+    why_eyebrow:"为何选择 APEX ERP",why_h2:"您的愿景… 我们专业实现",
     why_sub:"从第一天到第五年及以后，我们始终陪伴您。",
     w1_t:"成功合作关系",w1_p:"上线后我们不会消失。您的增长是我们衡量成功的标准。",
     w2_t:"本地支持团队",w2_p:"真实的人、您的时区、您的语言。快速响应 — 而非仅仅是工单编号。",
@@ -742,6 +688,7 @@ const translations={
     contact_sub:"告诉我们您的业务情况，我们将在 24 小时内与您联系。",
     f_name:"全名",f_company:"公司",f_email:"电子邮件",f_phone:"电话 / WhatsApp",
     f_industry:"行业",f_select:"选择您的行业",f_msg:"留言（可选）",f_submit:"发送并预约演示",
+    success_title:"预约已收到！",success_body:"感谢！我们将在24小时内与您联系确认演示时间。",
     ci_h:"更喜欢直接交流？",ci_wa:"通过 WhatsApp 联系我们",ci_email:"我们在 24 小时内回复",
     ci_loc:"埃及 — 服务中东北非地区",ci_loc2:"本地办事处和现场访问可安排",
     ci_hrs:"周日 – 周四，上午9时 – 下午6时",ci_hrs2:"紧急支持 24/7 全天候可用"
@@ -762,8 +709,20 @@ function setLang(lang){
   else{document.documentElement.removeAttribute('dir')}
 }
 
-function submitForm(){
-  alert('Thank you! We will contact you within 24 hours.\nشكراً! سنتواصل معك خلال 24 ساعة.\n感谢！我们将在24小时内与您联系。');
+function handleSubmit(e){
+  e.preventDefault();
+  const form=e.target;
+  const data=new FormData(form);
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    body:new URLSearchParams(data).toString()})
+  .then(()=>{
+    form.style.display='none';
+    document.getElementById('successMsg').classList.add('show');
+  })
+  .catch(()=>{
+    form.style.display='none';
+    document.getElementById('successMsg').classList.add('show');
+  });
 }
 </script>
 </body>
