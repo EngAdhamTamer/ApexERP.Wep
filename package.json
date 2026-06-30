@@ -1,0 +1,23 @@
+{
+  "name": "apex-erp-web",
+  "version": "1.0.0",
+  "description": "APEX ERP - Enterprise Resource Planning Web Application",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EngAdhamTamer/ApexERP.Wep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EngAdhamTamer/ApexERP.Wep/issues"
+  },
+  "homepage": "https://github.com/EngAdhamTamer/ApexERP.Wep#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
