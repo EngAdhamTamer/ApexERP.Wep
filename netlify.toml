@@ -3,5 +3,5 @@
 
 [[redirects]]
   from = "/"
-  to = "/apex_erp_website.html"
+  to = "/index.html"
   status = 200
